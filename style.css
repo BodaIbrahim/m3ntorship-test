@@ -1,0 +1,425 @@
+/*Global Styles*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  border: none;
+  background: #0072a8;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/*#1 Header and Navigation*/
+nav {
+  font-weight: bold;
+  display: flex;
+  min-height: 10vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding-left: 7rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  background: url(../Designnn1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 36rem;
+  top: 12rem;
+  z-index: -1;
+}
+header {
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
+  background: -moz-linear-gradient(
+    top,
+    rgba(161, 220, 239, 1) 0%,
+    rgba(169, 225, 243, 0.99) 15%,
+    rgba(164, 221, 240, 0.98) 34%,
+    rgba(145, 209, 231, 0.97) 54%,
+    rgba(141, 209, 230, 0.97) 55%,
+    rgba(136, 204, 227, 0.97) 61%,
+    rgba(99, 184, 210, 0.95) 88%,
+    rgba(86, 179, 205, 0.94) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(161, 220, 239, 1) 0%,
+    rgba(169, 225, 243, 0.99) 15%,
+    rgba(164, 221, 240, 0.98) 34%,
+    rgba(145, 209, 231, 0.97) 54%,
+    rgba(141, 209, 230, 0.97) 55%,
+    rgba(136, 204, 227, 0.97) 61%,
+    rgba(99, 184, 210, 0.95) 88%,
+    rgba(86, 179, 205, 0.94) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    top,
+    rgba(161, 220, 239, 1) 0%,
+    rgba(169, 225, 243, 0.99) 15%,
+    rgba(164, 221, 240, 0.98) 34%,
+    rgba(145, 209, 231, 0.97) 54%,
+    rgba(141, 209, 230, 0.97) 55%,
+    rgba(136, 204, 227, 0.97) 61%,
+    rgba(99, 184, 210, 0.95) 88%,
+    rgba(86, 179, 205, 0.94) 100%
+  );
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.weight-text {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Amatic SC", sans-serif;
+  flex: 1 1 20rem;
+  justify-content: flex-start;
+  text-align: justify;
+  line-height: 1.1;
+}
+
+.weight-text h2 {
+  font-size: 3rem;
+  color: #452a31;
+  width: 25rem;
+  text-align: center;
+}
+.weight-text h3 {
+  margin-top: 15rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #0072a8;
+  width: 20rem;
+  text-align: center;
+  transform: rotateZ(-15deg);
+}
+.weight-text span {
+  color: #0072a8;
+  text-align: center;
+}
+
+.happy-dog {
+  align-self: flex-end;
+  position: absolute;
+  left: 70%;
+  top: 21%;
+  flex: 1 1 20rem;
+}
+/*#2 Our Story section */
+.story-section {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-story {
+  position: relative;
+}
+
+.our-story h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: #452a31;
+  font-size: 3rem;
+}
+.our-story span {
+  color: #0072a8;
+  font-size: 6rem;
+}
+
+.story-text {
+  color: #452a31;
+  line-height: 1.7;
+  font-size: 2rem;
+}
+
+.story-text a {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0072a8;
+  padding-top: 2rem;
+}
+
+/*#3 Ingredients*/
+
+.ingredients-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../3/Chicken\ Image.png);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-head {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-head h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.hero-head h2 span {
+  font-size: 5rem;
+}
+
+.hero-head p {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-top: 3rem;
+  color: rgba(250, 242, 242, 0.808);
+  text-align: center;
+}
+
+/*#4 Perfect start to life section*/
+
+.extra-info {
+  max-width: 80%;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-text h2 {
+  font-family: "Amatic SC", sans-serif;
+  color: #452a31;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.info-text p {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.info-text button {
+  align-self: flex-start;
+}
+
+/* #5 section learn more standing dog*/
+
+.learn-more {
+  background-color: #f0f0f0;
+  padding: 4rem;
+}
+
+.content-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 12rem;
+  display: flex;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2 1 20rem;
+}
+
+.search h2 {
+  font-family: "Amatic SC", sans-serif;
+  color: #452a31;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.search button {
+  align-self: flex-start;
+}
+
+.search-input {
+  display: flex;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #777;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+.tall-dog {
+  flex: 1 1 20rem;
+  display: block;
+  position: relative;
+}
+
+.tall-dog img {
+  position: absolute;
+  bottom: -50%;
+  left: 0%;
+}
+
+/*#6*/
+
+.more-info {
+  justify-self: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2 1 20rem;
+}
+
+.more-info h2 {
+  font-family: "Amatic SC", sans-serif;
+  color: #452a31;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.more-info p {
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+
+.more-info button {
+  align-self: flex-start;
+}
+
+.find-food {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 10rem auto;
+}
+
+.find-food p {
+  width: 80%;
+}
+
+/* #7 Footer*/
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  background-color: #f0f0f0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.copywrite-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.copy-list {
+  height: 25px;
+  margin-bottom: 10rem;
+}
+
+.logo {
+  height: 30%;
+  margin-top: auto;
+}
+
+.copy-list ul {
+  list-style: none;
+  text-transform: uppercase;
+  max-width: 33rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.copy-list ul li {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.copy-list ul li:last-child {
+  margin-right: 7rem;
+}
+
+.copywrite-section a {
+  color: #452a31;
+}
+
+.copywrite {
+  font-weight: 500;
+  margin-left: 2rem;
+}
+
+.social-links {
+  align-self: flex-end;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+}
+
+.social-links i {
+  font-size: 2rem;
+  color: #7ac0dc;
+  padding: 0.5rem;
+}
